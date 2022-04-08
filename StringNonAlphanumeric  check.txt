@@ -1,0 +1,15 @@
+package com.mkyong.regex.string;
+
+public class StringNonAlphanumeric {
+
+    public static void main(String[] args) {
+
+        String str = "!@#$%";
+
+        if (str.matches("^[^a-zA-Z0-9]+$")) {
+            System.out.println("Yes, true.");
+        } else {
+            System.out.println("failed!");
+        }
+    }
+}
